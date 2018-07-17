@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Zin's Portfolio</title>
+      <!-- Starter css file for bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- Starter js file for JQuery -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <!-- Starter css file for Fullpage  -->
+      <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullPage.min.css" />
+      <link rel="stylesheet" type="text/css" href="index.css">
+   </head>
+   <body>
+      <div id="fullpage">
+         <div class="section">Some section</div>
+         <div class="section">
+            <div class="slide" data-anchor="slide1">
+               Two 1
+            </div>
+            <div class="slide" data-anchor="slide2">
+               Two 2
+            </div>
+         </div>
+         <div class="section">Some section</div>
+         <div class="section">Some section</div>
+      </div>
+      <!-- starter file for fullpage.js -->
+      <script src="node_modules/fullpage.js/dist/fullPage.min.js"></script>
+      <!-- Fullpage js intitation script --> 
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $('#fullpage').fullpage({
+             sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+               scrollBar: true,
+               navigation: true,
+               scrollHorizontally: true
+         
+             });
+         });
+         
+      </script>
+   </body>
+</html>
